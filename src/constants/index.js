@@ -38,11 +38,11 @@ import {
 
 export const navigation = [
 
-  {
-    id: "1",
-    title: "Document Transfer",
-    url: "/shareService",
-  },
+  // {
+  //   id: "1",
+  //   title: "Document Transfer",
+  //   url: "/shareService",
+  // },
   {
     id: "2",
     title: "Document Sentinel",
