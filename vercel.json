@@ -5,12 +5,6 @@
             "src": "src/main.jsx",
             "use": "@vercel/node"
         }
-    ],
-    "rewrites":[
-        
-    ],
-    "routes": [
-        
     ]
 
 }
