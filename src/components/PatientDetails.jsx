@@ -24,7 +24,7 @@ const PatientDetails = () => {
     useEffect(() => {
         const fetchPatient = async () => {
             try {
-                const response = await axios.get(`http://localhost:5500/patients/${id}`);
+                const response = await axios.get(`https://protectaid-backend.onrender.com/patients/${id}`);
                 setPatient(response.data);
                 setFormData({
                     roomTemperature: response.data.roomTemperature,
@@ -53,7 +53,7 @@ const PatientDetails = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post(`http://localhost:5500/patients/${id}`, { ...formData, doctorNotes });
+            await axios.post(`https://protectaid-backend.onrender.com/patients/${id}`, { ...formData, doctorNotes });
             setSubmittedData({ ...formData, doctorNotes });
             alert('Patient details updated successfully');
         } catch (error) {

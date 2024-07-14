@@ -12,7 +12,7 @@ const PatientList = () => {
     useEffect(() => {
         const fetchPatients = async () => {
             try {
-                const response = await axios.get('http://localhost:5500/patients');
+                const response = await axios.get('https://protectaid-backend.onrender.com/patients');
                 setPatients(response.data);
             } catch (error) {
                 console.error('Error fetching patients:', error);
@@ -33,7 +33,7 @@ const PatientList = () => {
 
     const deletePatient = async (id) => {
         try {
-            await axios.delete(`http://localhost:5500/patients/${id}`);
+            await axios.delete(`https://protectaid-backend.onrender.com/patients/${id}`);
             setPatients(patients.filter(patient => patient._id !== id));
         } catch (error) {
             console.error('Error deleting patient:', error);

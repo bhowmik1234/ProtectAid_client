@@ -73,7 +73,7 @@ const SOSRequest = () => {
     };
 
     try {
-      await axios.post('http://localhost:5500/sos', data);
+      await axios.post('https://protectaid-backend.onrender.com/sos', data);
       setSuccessMessage('SOS request sent successfully!');
       setFormData({
         contactNumber: '',

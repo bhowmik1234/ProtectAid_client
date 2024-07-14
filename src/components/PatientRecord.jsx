@@ -24,7 +24,7 @@ const PatientRecord = () => {
         diagnosis,
         treatment,
       };
-      const response = await axios.post('http://localhost:5500/patient', newPatient, {
+      const response = await axios.post('https://protectaid-backend.onrender.com/patient', newPatient, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -25,7 +25,7 @@ const PatientDashboard = ({ setTotalPatients, setTotalAppointments }) => {
     useEffect(() => {
         const fetchStatusData = async () => {
             try {
-                const response = await axios.get('http://localhost:5500/sos/statusCounts');
+                const response = await axios.get('https://protectaid-backend.onrender.com/sos/statusCounts');
                 setStatusData(response.data);
             } catch (error) {
                 console.error('Error fetching status data:', error);
@@ -41,7 +41,7 @@ const PatientDashboard = ({ setTotalPatients, setTotalAppointments }) => {
     useEffect(() => {
         const fetchPatientData = async () => {
             try {
-                const response = await axios.get('http://localhost:5500/patientsdashboard');
+                const response = await axios.get('https://protectaid-backend.onrender.com/patientsdashboard');
                 setPatientData(response.data);
                 const totalPatients = response.data.femalePatients + response.data.malePatients + response.data.otherPatients + response.data.nonPatients;
                 setTotalPatients(totalPatients);
