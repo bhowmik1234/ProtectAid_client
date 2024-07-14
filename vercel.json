@@ -3,6 +3,15 @@
     "builds": [
     ],
     "routes": [
+        { "handle": "filesystem" },
+        {
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
+        },
+        {
+            "src": "/(.*)\\.(?:js|css|svg|png|jpg|jpeg|gif|ico)$",
+            "dest": "/$1.$2"
+        },
         {
             "src": "/(.*)",
             "dest": "/index.html"
