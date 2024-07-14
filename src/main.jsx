@@ -31,9 +31,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='/' element={<Hero/>}/>
-      <Route path='/shareService' element={<ShareService/>}/>
+      <Route path='/sos' element={<ShareService/>}/>
       <Route path='/shareService/share' element={<Share/>}/>
-      <Route path='/digilocker' element={<Digilocker/>}/>
+      <Route path='/digi' element={<Digilocker/>}/>
       <Route path='/digilocker/dashboard' element={<Dashboard/>}/>
       <Route path='/track' element={<Track/>}/>
       <Route path='/revoke' element={<Revoke/>}/>
