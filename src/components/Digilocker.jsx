@@ -3,6 +3,7 @@ import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { Link } from "react-router-dom";
 
 const Digilocker = () => {
   return (
@@ -13,7 +14,7 @@ const Digilocker = () => {
           <h1 className="h2 mb-4 md:mb-8">
             Digilocker services to store logistics and confidential data securely
           </h1>
-          <Button href={'/digilocker/dashboard'}>Continue to Dashboard</Button>
+          <Link to="/digilocker/dashboard">Continue to Dashboard</Link>
           </div>
 
           <ul className="max-w-[30rem] mb-10 md:mb-14">
