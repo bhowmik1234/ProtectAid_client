@@ -7,20 +7,10 @@
         }
     ],
     "rewrites":[
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+        
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/main.jsx",
-            "methods": ["GET", "POST"],
-            "headers": {
-                "Access-Control-Allow-Origin": "*"
-            }
-        }
+        
     ]
 
 }
