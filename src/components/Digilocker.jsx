@@ -14,7 +14,7 @@ const Digilocker = () => {
           <h1 className="h2 mb-4 md:mb-8">
             Digilocker services to store logistics and confidential data securely
           </h1>
-          <Link to="/digilocker/dashboard">Continue to Dashboard</Link>
+          <Button><Link to="/digilocker/dashboard">Continue to Dashboard</Link></Button>
           </div>
 
           <ul className="max-w-[30rem] mb-10 md:mb-14">
